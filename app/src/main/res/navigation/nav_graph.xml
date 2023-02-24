@@ -34,10 +34,13 @@
     <fragment
         android:id="@+id/fragmentC"
         android:name="com.example.navigation2.FragmentC"
-        android:label="fragment_c"
+        android:label="Fragment C"
         tools:layout="@layout/fragment_c" >
         <action
             android:id="@+id/action_fragmentC_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <argument android:name="message"
+            app:argType="string"
+            android:defaultValue="Hello There!" />
     </fragment>
 </navigation>
